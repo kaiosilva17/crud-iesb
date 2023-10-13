@@ -29,28 +29,28 @@ export default function Form({ handleSubmit, initialValues, disabled }: FormProp
              
         </label>
         <label>
-            <span>Email:</span>
+            <span>Ano:</span>
             <MainInput
-          name="email"
-          value={inputValues.email}
+          name="ano"
+          value={inputValues.ano}
           onChange={handleChange}
           disabled={disabled}
         />
         </label>
         <label>
-            <span>Telefone:</span>
+            <span>Cor:</span>
             <MainInput
-          name="telefone"
-          value={inputValues.telefone}
+          name="cor"
+          value={inputValues.cor}
           onChange={handleChange}
           disabled={disabled}
         />
         </label>
         <label>
-            <span>CPF:</span>
+            <span>Preço:</span>
             <MainInput
-          name="cpf"
-          value={inputValues.cpf}
+          name="preco"
+          value={inputValues.preco}
           onChange={handleChange}
           disabled={disabled}
         />

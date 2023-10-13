@@ -1,10 +1,10 @@
 import type { Entry } from "../types"
 
-const URL = 'http://localhost:3001/contatos';
+const URL = 'http://localhost:3001/carros';
 
 
 export default {
-    async createContato(body: Entry) {
+    async createCarro(body: Entry) {
       try {
         const response = await fetch(URL, {
           method: 'POST',
@@ -21,7 +21,7 @@ export default {
       }
     },
   
-    async getContatos() {
+    async getCarros() {
       try {
         const response = await fetch(URL);
         const data = await response.json();
@@ -31,7 +31,7 @@ export default {
       }
     },
   
-    async getContato(id: string) {
+    async getCarro(id: string) {
       try {
         const response = await fetch(`${URL}/${id}`);
         const data = await response.json();
@@ -41,7 +41,7 @@ export default {
       }
     },
   
-    async atualizarContato(id: string, body: Entry) {
+    async atualizarCarro(id: string, body: Entry) {
       try {
         const response = await fetch(`${URL}/${id}`, {
           method: 'PUT',
@@ -58,7 +58,7 @@ export default {
       }
     },
   
-    async deletarContato(id: string) {
+    async deletarCarro(id: string) {
       try {
         const response = await fetch(`${URL}/${id}`, {
           method: 'DELETE',

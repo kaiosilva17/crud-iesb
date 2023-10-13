@@ -7,19 +7,19 @@ import api from '../api';
 import Form from '../components/form';
 import type { Entry } from '../types';
 
-export default function newContact() {
+export default function newCarro() {
   const router = useRouter();
 
   const handleSubmit = async (event: FormEvent, inputValues: Entry) => {
     event.preventDefault();
-    await api.createContato(inputValues);
+    await api.createCarro(inputValues);
     router.push('/');
   };
 
   return (
     <main>
       <header>
-        <h1>Novo contato</h1>
+        <h1>Novo carro</h1>
         <nav>
           <Link href={'/'}>Voltar</Link>
         </nav>
@@ -28,9 +28,9 @@ export default function newContact() {
         handleSubmit={handleSubmit}
         initialValues={{
           nome: '',
-          email: '',
-          telefone: '',
-          cpf: '',
+          ano: '',
+          cor: '',
+          preco: '',
         }}
       />
     </main>

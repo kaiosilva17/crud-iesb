@@ -2,13 +2,13 @@ import { FormEvent } from 'react';
 
 export type Entry = {
   nome: string;
-  email: string;
-  telefone: string;
-  cpf: string;
+  ano: string;
+  cor: string;
+  preco: string;
   id?: number;
 };
 
-export type DetalhesContatoProps = { params: { id: string } };
+export type DetalhesCarroProps = { params: { id: string } };
 
 export type FormProps = {
   handleSubmit: (event: FormEvent, inputValues: Entry) => Promise<void>;

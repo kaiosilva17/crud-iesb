@@ -5,50 +5,50 @@ import { useRouter } from 'next/navigation';
 import api from '../../api';
 import Form from '../../components/form';
 import { MainButton } from '../../components/styled';
-import type { Entry, DetalhesContatoProps } from '../../types';
+import type { Entry, DetalhesCarroProps } from '../../types';
 
-export default function DetalhesContatoProps({ params }: DetalhesContatoProps) {
-  const [contato, setContato] = useState<null | Entry>(null);
+export default function DetalhesCarroProps({ params }: DetalhesCarroProps) {
+  const [carro, setCarro] = useState<null | Entry>(null);
   const [editing, setEditing] = useState(false);
   const router = useRouter();
   const id = params.id;
 
   const handleSubmit = async (event: FormEvent, inputValues: Entry) => {
     event.preventDefault();
-    await api.atualizarContato(id, inputValues);
+    await api.atualizarCarro(id, inputValues);
     setEditing(false);
   };
 
-  const deleteContact = async () => {
-    await api.deletarContato(id);
+  const deletarCarro = async () => {
+    await api.deletarCarro(id);
     router.push('/');
   };
 
   useEffect(() => {
-    const getContato = async () => {
-      const data = await api.getContato(id);
-      setContato(data);
+    const getCarro = async () => {
+      const data = await api.getCarro(id);
+      setCarro(data);
     };
 
-    getContato();
+    getCarro();
   }, []);
 
   return (
     <main>
       <header>
-        <h1>Detalhes do contato</h1>
+        <h1>Detalhes do Carro</h1>
         <nav>
           <Link href={'/'}>Voltar</Link>
         </nav>
       </header>
-      {contato && (
-        <Form handleSubmit={handleSubmit} initialValues={contato} disabled={!editing} />
+      {carro && (
+        <Form handleSubmit={handleSubmit} initialValues={carro} disabled={!editing} />
       )}
       <MainButton type="button" onClick={() => setEditing(true)}>
-        Editar
+        Modificar
       </MainButton>
-      <MainButton type="button" onClick={deleteContact}>
-        Apagar
+      <MainButton type="button" onClick={deletarCarro}>
+        Deletar
       </MainButton>
     </main>
   );

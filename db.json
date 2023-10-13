@@ -1,39 +1,32 @@
 {
-  "contatos": [
+  "carros": [
+    {
+      "id": 1,
+      "nome": "Gol",
+      "ano": "2006",
+      "cor": "preto",
+      "preco": "25.000"
+    },
     {
       "id": 2,
-      "nome": "Joao",
-      "email": "joao@gmail.com",
-      "telefone": "96548-8562",
-      "cpf": "023.654.958-86"
+      "nome": "Celta",
+      "ano": "2004",
+      "cor": "azul",
+      "preco": "15.000"
     },
     {
       "id": 3,
-      "nome": "Pedro",
-      "email": "pedro@gmail.com",
-      "telefone": "93425-6987",
-      "cpf": "985.654.987-32"
+      "nome": "Fiesta",
+      "ano": "2005",
+      "cor": "prata",
+      "preco": "22.000"
     },
     {
-      "id": 4,
-      "nome": "Marcos",
-      "email": "marcos@gmail.com",
-      "telefone": "97643-1234",
-      "cpf": "241.689.534-65"
-    },
-    {
-      "id": 5,
-      "nome": "Guilherme",
-      "email": "guilherme@gmail.com",
-      "telefone": "90564-3154",
-      "cpf": "958.624.597-82"
-    },
-    {
-      "nome": "Kaio",
-      "email": "Kaio@gmail.com",
-      "telefone": "95864-6547",
-      "cpf": "564.357.684-98",
-      "id": 6
+      "nome": "Fiorino",
+      "ano": "2000",
+      "cor": "branco",
+      "preco": "10.000",
+      "id": 4
     }
   ]
 }
