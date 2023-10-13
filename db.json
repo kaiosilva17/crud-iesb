@@ -1,0 +1,39 @@
+{
+  "contatos": [
+    {
+      "id": 2,
+      "nome": "Joao",
+      "email": "joao@gmail.com",
+      "telefone": "96548-8562",
+      "cpf": "023.654.958-86"
+    },
+    {
+      "id": 3,
+      "nome": "Pedro",
+      "email": "pedro@gmail.com",
+      "telefone": "93425-6987",
+      "cpf": "985.654.987-32"
+    },
+    {
+      "id": 4,
+      "nome": "Marcos",
+      "email": "marcos@gmail.com",
+      "telefone": "97643-1234",
+      "cpf": "241.689.534-65"
+    },
+    {
+      "id": 5,
+      "nome": "Guilherme",
+      "email": "guilherme@gmail.com",
+      "telefone": "90564-3154",
+      "cpf": "958.624.597-82"
+    },
+    {
+      "nome": "Kaio",
+      "email": "Kaio@gmail.com",
+      "telefone": "95864-6547",
+      "cpf": "564.357.684-98",
+      "id": 6
+    }
+  ]
+}
